@@ -1,10 +1,10 @@
 package EngNoteWebsite
 
 import (
-	"EngNoteWebsite/database"
 	"database/sql"
-	"github.com/gin-gonic/gin"
 	"log"
+
+	"github.com/gin-gonic/gin"
 )
 
 /*
@@ -13,7 +13,7 @@ import (
 3.所有代码现在都还是一坨，大概看个样子，慢慢提高健壮性
 4.数据库代码仅占位，不可用（想好了在说，现在用啥都不知道）
 
-ps：学的go怎么感觉忘得差不多了，又得慢慢学
+ps：学的go怎么感觉忘得差不多了，又得慢慢学 6666
 
 循环依赖怎么解决啊？？
 */
@@ -48,10 +48,10 @@ func main() {
 
 	router := gin.Default()
 
-	// 路由设置（待完善
-	router.POST("/words", database.CreateWord)
-	router.GET("/words/:text", database.SearchWord)
-	router.POST("/words/:text/encounter", database.IncrementWordCount)
+	// // 路由设置（待完善
+	// router.POST("/words", database.CreateWord)
+	// router.GET("/words/:text", database.SearchWord)
+	// router.POST("/words/:text/encounter", database.IncrementWordCount)
 
 	// 启动服务器
 	router.Run(":8888")
